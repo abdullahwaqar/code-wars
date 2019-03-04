@@ -86,7 +86,6 @@ std::string declareWinnerRev2(Fighter* fighter1, Fighter* fighter2, std::string 
 {
     int firstSteps = GetSteps(fighter2->getHealth(),fighter1->getDamagePerAttack());
     int secondSteps = GetSteps(fighter1->getHealth(),fighter2->getDamagePerAttack());
-
     if (secondSteps < firstSteps) return fighter2->getName();
     else if (secondSteps > firstSteps) return fighter1->getName();
 
